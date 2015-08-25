@@ -1,0 +1,6 @@
+{
+      "name": "pbchen/dns-cache",
+          "require": {
+               "dns-cache/src": "master"
+           }
+}
