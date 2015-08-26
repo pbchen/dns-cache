@@ -1,6 +1,7 @@
 {
       "name": "pbchen/dns-cache",
-          "require": {
-               "dns-cache/src": "master"
-           }
+      "description":"notify dns cache"
+      "require": {
+           "php": ">=5.3.0"
+      },
 }
