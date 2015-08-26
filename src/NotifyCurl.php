@@ -3,6 +3,7 @@
 /**
  * 定义DNS缓存的前缀
  */
+namespace DnsCache;
 define('CURL_DNS_KEY_PREFIX', 'curl_dns_cache_');
 
 class NotifyCurl{
