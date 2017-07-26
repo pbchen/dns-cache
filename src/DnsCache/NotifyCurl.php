@@ -4,6 +4,7 @@
  * 定义DNS缓存的前缀
  */
 namespace DnsCache;
+
 define('CURL_DNS_KEY_PREFIX', 'curl_dns_cache_');
 
 class NotifyCurl{
@@ -82,7 +83,6 @@ class NotifyCurl{
 		            curl_setopt($this->curl, CURLOPT_TIMEOUT, $timeout); //超时设置
                 $data = curl_exec($this->curl);
                 $curl_info = curl_getinfo($this->curl);
-		//var_dump($curl_info);
                 //30x 需要自动转向
                 $go_forward = preg_match('/^30/',$curl_info['http_code']);
                 if($go_forward && $forward>0 && isset($curl_info['redirect_url'])){
